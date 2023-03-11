@@ -20,6 +20,8 @@
     text-align: right;
     display: flex;
     float: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 .title--nav {
@@ -54,10 +56,10 @@
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    font-weight: bold;
 }
 
 .navbar a:hover,
-
 .dropdown:hover .dropbtn {
     background-color: rgb(31, 150, 205);
     padding-right: 30px;

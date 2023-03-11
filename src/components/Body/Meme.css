@@ -1,0 +1,26 @@
+main {
+    padding: 36px;
+}
+
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+}
+
+.form--input {
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    border: 1px solid rgb(31, 150, 205);
+    text-indent: 5px;
+}
+
+.form--button {
+    grid-column: 1 / -1;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    background: linear-gradient(90.41deg, #2d8faf 1.14%, #1f548d 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
