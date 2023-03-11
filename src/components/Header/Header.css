@@ -3,7 +3,7 @@
 }
 
 .main--nav {
-    background-color: rgb(31, 150, 205);
+    background: linear-gradient(90.41deg, #2d8faf 1.14%, #1f548d 100%);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
     width: 100%;
     height: auto;
@@ -77,7 +77,7 @@
 .dropdown-content a {
     float: none;
     color: black;
-    padding: 12px 16px;
+    padding: 12px 26px 10px 10px;
     text-decoration: none;
     display: block;
     text-align: left;
