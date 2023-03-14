@@ -8,7 +8,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <SignUp />
+      <Meme />
+  
     </div>
   );
 }

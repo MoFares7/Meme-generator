@@ -2,7 +2,7 @@ main {
     padding: 36px;
 }
 
-.form {
+.form1 {
     display: grid;
     grid-template: 40px 40px / 1fr 1fr;
     gap: 17px;
@@ -26,7 +26,6 @@ main {
 }
 
 .meme--image {
-    padding: 10px;
-    align-items: center;
     max-width: 100%;
+    border-radius: 3px;
 }
