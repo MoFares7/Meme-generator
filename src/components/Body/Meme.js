@@ -13,15 +13,15 @@ export default function Meme() {
         
         const [allMemeImages, setAllMemeImages] = React.useState(memesData)
 
-        function getMemeImage()
-        {
-                const memesArray = memesData.data.memes;
+        function getMemeImage() {
+                const memesArray = allMemeImages.data.memes
                 const randomNumber = Math.floor(Math.random() * memesArray.length)
                 const url = memesArray[randomNumber].url
-                setMeme(prevImage => ({
-                        ...prevImage,
+                setMeme(prevMeme => ({
+                        ...prevMeme,
                         randomImage: url
-                }))   
+                }))
+
         }
 
         function handleChange(event) {
@@ -60,8 +60,8 @@ export default function Meme() {
                         </div>
                         <div className="meme">
                                 <img className="meme--image" src={meme.randomImage} />
-                                <h2>{meme.topText}</h2>
-                                <h2>{meme.bottomText}</h2>
+                                <h2 className="meme--text top">{meme.topText}</h2>
+                                <h2 className="meme--text bottom">{meme.bottomText}</h2>
                         </div>
                      
                 </main>
