@@ -20,7 +20,7 @@ export default function Meme() {
                         const data = await respons.json()
                         setAllMeme(data.data.Meme)
                 }
-
+               getMems()
         }, [])
 
         function getMemeImage() {
