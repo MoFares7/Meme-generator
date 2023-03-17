@@ -8,6 +8,7 @@
         position:relative;
         max-width: 100%;
         float: left;
+        padding: auto;
         background: linear-gradient(90.41deg, #2d8faf 1.14%, #1f548d 100%);
     }
 }
