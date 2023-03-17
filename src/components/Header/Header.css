@@ -2,12 +2,23 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 650px) {
+    .option--nav {
+        display: block;
+        position:relative;
+        max-width: 100%;
+        float: left;
+        background: linear-gradient(90.41deg, #2d8faf 1.14%, #1f548d 100%);
+    }
+}
+
 .main--nav {
     background: linear-gradient(90.41deg, #2d8faf 1.14%, #1f548d 100%);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
     width: 100%;
     height: auto;
     align-items: center;
+    display: block;
 }
 
 .img--nav {
