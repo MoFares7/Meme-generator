@@ -23,9 +23,9 @@ function App() {
         />
 
         <Routes>
-          <Route path="/" element={<Meme />} />
-          <Route path="/OurProducts" element={<Products />} />
-          <Route path="/about" element={<SignUp />} />
+          <Route path="/" element={<Products />} />
+          <Route path="/OurProducts" element={<Meme />} />
+          <Route path="/SignUp" element={<SignUp />} />
         </Routes>
       </BrowserRouter>
       
