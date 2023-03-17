@@ -1,5 +1,5 @@
 import { useState } from "react";
-import headericon from "../assets/header-icon.svg";
+import headericon from "../../assets/header-icon.svg";
 import SignUp from "../SignUp/SignUp";
 import "./Header.css"
 import { Route, Routes, Router, BrowserRouter, Link } from "react-router-dom";
@@ -18,6 +18,7 @@ export default function Header(props) {
                                         <h2 className="title--nav"><span>Meme Generator</span></h2>
                                         <div className="option--nav">
                                                 <Link to="/">Home</Link>
+                                                <Link to="/OurProducts">Our Products</Link>
                                                 <Link to="/about">Sign up</Link>
 
                                                 <div className="dropdown">

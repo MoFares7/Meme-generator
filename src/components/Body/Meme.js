@@ -1,6 +1,6 @@
 import React from "react";
 import "./Meme.css"
-import memesData from "../Data/MemeData"
+import memesData from "../../Data/MemeData"
 
 export default function Meme() {
 
