@@ -6,6 +6,7 @@ import { Route, Routes, Router, BrowserRouter, Link } from "react-router-dom";
 import { useState } from 'react';
 import Products from './components/Products/Products';
 import "./Data/server"
+import ProductsDetails from './components/Product-Details/ProductDetails';
 
 //  <Meme />
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<Products />} />
           <Route path="/OurProducts" element={<Meme />} />
           <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/vans/:id" element={<ProductsDetails />} />
         </Routes>
       </BrowserRouter>
       

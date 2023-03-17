@@ -1,8 +1,8 @@
 /*** VAN PAGES ***/
 
 .van-list-container {
-    padding-inline: 23px
-    ;padding-bottom: 18px;
+    padding-inline: 23px;
+    padding-bottom: 18px;
 }
 
 .van-list {
@@ -11,6 +11,11 @@
     justify-items: center;
     gap: 34px;
     margin-top: 57px;
+}
+
+.van-tile {
+
+    border-radius: 5px;
 }
 
 .van-tile a {
@@ -49,7 +54,7 @@
 }
 
 .van-type.selected {
-    color: #FFEAD0;
+    color: #f9f8f7;
 }
 
 .van-type.simple:hover,
