@@ -2,14 +2,30 @@ import './App.css';
 import Meme from './components/Body/Meme';
 import Header from './components/Header/Header';
 import SignUp from './components/SignUp/SignUp';
-import { BrowserRouter as Switch, Redirect, Route, Router, Routes } from "react-router-dom";
+import { Route, Routes, Router, BrowserRouter, Link } from "react-router-dom";
+import { useState } from 'react';
 //  <Meme />
 function App() {
+
+  const [darkMode, setDarkMode] = useState(true)
+  function toDarkMode() {
+    setDarkMode(prevMode => !prevMode)
+  }
+
   return (
     <div className="App">
-      <Header />
+      <BrowserRouter>
+        <Header darkMode={darkMode}
+          toDarkMode={toDarkMode}
+        />
+
+        <Routes>
+          <Route path="/" element={<Meme />} />
+          <Route path="/about" element={<SignUp />} />
+        </Routes>
+      </BrowserRouter>
       
-      <Meme />
+
 
     </div>
   );
